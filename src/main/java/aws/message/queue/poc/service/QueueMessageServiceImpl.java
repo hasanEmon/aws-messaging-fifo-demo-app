@@ -21,7 +21,7 @@ import java.util.Map;
 @Service
 public class QueueMessageServiceImpl implements QueueMessageService{
 
-    @Value("${cloud.aws.fifo.end-point.url}")
+    @Value("${cloud.aws.queue.end-point.url}")
     private String queueEndpointUrl;
     @Autowired
     private AmazonSQS amazonSQS;
